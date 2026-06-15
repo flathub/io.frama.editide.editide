@@ -55,8 +55,8 @@
             "name": "ctags",
             "buildsystem": "autotools",
             "cleanup": [
-                "readtags",
-                "optscript"
+                "/bin/readtags",
+                "/bin/optscript"
             ],
             "sources": [
                 {
