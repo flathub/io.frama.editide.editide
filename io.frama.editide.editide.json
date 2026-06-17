@@ -72,6 +72,43 @@
             ]
         },
         {
+            "name": "gtksourceview",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dbuild-testsuite=false",
+                "-Dvapi=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gtksourceview/5.20/gtksourceview-5.20.0.tar.xz",
+                    "sha256": "e38bcd23f52b86eadf0fe4d8bde698e3a8ca102322b8b4cf1a51ac294a448c1b",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gtksourceview",
+                        "version-scheme": "odd-minor-is-unstable",
+                        "stable-only": true
+                    }
+                },
+                {
+                    "type": "patch",
+                    "path": "gtksourceview_currentline.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "gtksourceview_spaces.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "gtksourceview_styles.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "gtksourceview_438.patch"
+                }
+            ]
+        },
+        {
             "name": "libspelling",
             "buildsystem": "meson",
             "config-opts": [

@@ -1,0 +1,297 @@
+ data/styles/Adwaita-dark.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/data/styles/Adwaita-dark.xml b/data/styles/Adwaita-dark.xml
+index 567d876e..05453974 100644
+--- a/data/styles/Adwaita-dark.xml
++++ b/data/styles/Adwaita-dark.xml
+@@ -102,8 +102,9 @@
+   <style name="draw-spaces"                foreground="dark_3"/>
+   <style name="line-numbers"               background="libadwaita-dark" foreground="dark_2"/>
+   <style name="map-overlay"                background="dark_1"/>
+-  <style name="right-margin"               background="dark_1" foreground="dark_1"/>
++  <style name="right-margin"               background="dark_3" foreground="dark_3"/>
+   <style name="search-match"               background="#rgba(246,211,45,.5)" foreground="dark_5"/>
++  <style name="quick-highlight-match"      background="#rgba(78,154,6,.375)"/>
+   <style name="text"                       background="libadwaita-dark" foreground="light_5"/>
+ 
+   <!-- Defaults -->
+ data/styles/Adwaita.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/data/styles/Adwaita.xml b/data/styles/Adwaita.xml
+index bc23e4bf..4a0f919e 100644
+--- a/data/styles/Adwaita.xml
++++ b/data/styles/Adwaita.xml
+@@ -99,8 +99,9 @@
+   <style name="draw-spaces"                foreground="light_6"/>
+   <style name="line-numbers"               background="light_1" foreground="light_6"/>
+   <style name="map-overlay"                background="dark_1"/>
+-  <style name="right-margin"               background="dark_1" foreground="dark_1"/>
++  <style name="right-margin"               background="light_5" foreground="light_5"/>
+   <style name="search-match"               background="yellow_2" foreground="dark_4"/>
++  <style name="quick-highlight-match"      background="#rgba(132,211,58,.25)"/>
+   <style name="text"                       background="light_1" foreground="dark_3"/>
+ 
+   <!-- Defaults -->
+ data/styles/classic-dark.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/data/styles/classic-dark.xml b/data/styles/classic-dark.xml
+index 03decded..cdb04e5d 100644
+--- a/data/styles/classic-dark.xml
++++ b/data/styles/classic-dark.xml
+@@ -63,6 +63,7 @@
+ 
+   <!-- Search Matching -->
+   <style name="search-match"                foreground="text1" background="#602080"/>
++  <style name="quick-highlight-match"       background="#rgba(78,154,6,.375)"/>
+ 
+   <!-- Comments -->
+   <style name="def:comment"                 foreground="blue"/>
+ data/styles/classic.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/data/styles/classic.xml b/data/styles/classic.xml
+index d75ef38c..2775c488 100644
+--- a/data/styles/classic.xml
++++ b/data/styles/classic.xml
+@@ -62,10 +62,11 @@
+   <style name="bracket-mismatch"            foreground="white" background="red"/>
+ 
+   <!-- Right Margin -->
+-  <style name="right-margin"                foreground="#000000" background="#000000"/>
++  <style name="right-margin"                foreground="gray" background="gray"/>
+ 
+   <!-- Search Matching -->
+   <style name="search-match"                background="yellow"/>
++  <style name="quick-highlight-match"       background="#rgba(132,211,58,.25)"/>
+ 
+   <!-- Comments -->
+   <style name="def:comment"                 foreground="blue"/>
+ data/styles/cobalt-light.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/data/styles/cobalt-light.xml b/data/styles/cobalt-light.xml
+index d2a2d639..2084a6b1 100644
+--- a/data/styles/cobalt-light.xml
++++ b/data/styles/cobalt-light.xml
+@@ -54,8 +54,9 @@
+   <style name="cursor"                     foreground="darker_blue"/>
+   <style name="draw-spaces"                foreground="blue_gray"/>
+   <style name="line-numbers"               background="light_blue" foreground="blue"/>
+-  <style name="right-margin"               background="gray" foreground="gray"/>
++  <style name="right-margin"               background="#BEBEBE" foreground="#BEBEBE"/>
+   <style name="search-match"               background="sea_green" foreground="darker_blue"/>
++  <style name="quick-highlight-match"      background="#rgba(211,200,58,.375)"/>
+   <style name="selection"                  background="sky_blue2"/>
+   <style name="text"                       background="light_blue" foreground="darker_blue"/>
+ 
+ data/styles/cobalt.xml | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/data/styles/cobalt.xml b/data/styles/cobalt.xml
+index 25baa5f8..11fea4f1 100644
+--- a/data/styles/cobalt.xml
++++ b/data/styles/cobalt.xml
+@@ -61,9 +61,10 @@
+   <style name="selection"                   foreground="#rgba(0,0,0,0)" background="#rgba(0, 136, 255, .3)"/>
+   <style name="cursor"                      foreground="white"/>
+   <style name="current-line"                background="medium_blue"/>
+-  <style name="line-numbers"                foreground="light_blue" background="black_blue"/>
++  <style name="current-line-number"         background="medium_blue"/>
++  <style name="line-numbers"                foreground="light_blue" background="dark_blue"/>
+   <style name="draw-spaces"                 foreground="bluish_grey"/>
+-  <style name="right-margin"                foreground="light_grey" background="light_grey"/>
++  <style name="right-margin"                foreground="#484848" background="#484848"/>
+   <style name="background-pattern"          background="dark_medium_blue_blend"/>
+   <style name="snippet-focus"               foreground="light_blue" background="steelblue3"/>
+ 
+@@ -73,6 +74,7 @@
+ 
+   <!-- Search Matching -->
+   <style name="search-match"                foreground="white" background="sea_green"/>
++  <style name="quick-highlight-match"       background="#rgba(154,154,6,.375)"/>
+ 
+   <!-- Bookmarks FIXME -->
+   <style name="bookmark"                    background="white"/>
+ data/styles/kate-dark.xml | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/data/styles/kate-dark.xml b/data/styles/kate-dark.xml
+index a45df069..b61e8f22 100644
+--- a/data/styles/kate-dark.xml
++++ b/data/styles/kate-dark.xml
+@@ -51,9 +51,8 @@
+   <style name="selection"                   foreground="#rgba(0,0,0,0)" background="#rgba(45, 92, 118, .3)"/>
+   <style name="current-line"                background="#2a2e32"/>
+   <style name="current-line-number"         background="#2a2e32" foreground="#a5a6a8"/>
+-  <style name="line-numbers"                foreground="gray" background="#31363b"/>
+-  <style name="line-numbers-border"         background="#3f4347"/>
+-  <style name="right-margin"                foreground="gray" background="gray"/>
++  <style name="line-numbers"                foreground="gray" background="content-bg"/>
++  <style name="right-margin"                foreground="#484848" background="#484848"/>
+   <style name="bracket-match"               background="purple" foreground="light-gray" bold="true"/>
+   <style name="bracket-mismatch"            background="pink-red"/>
+   <style name="draw-spaces"                 foreground="#4d4d4d"/>
+@@ -63,6 +62,7 @@
+ 
+   <!-- Search Matching -->
+   <style name="search-match"                foreground="light-gray" background="#218058"/>
++  <style name="quick-highlight-match"       background="#rgba(154,154,6,.375)"/>
+ 
+   <!-- Bookmarks -->
+   <style name="bookmark"                    background="#0404bf"/>
+ data/styles/kate.xml | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/data/styles/kate.xml b/data/styles/kate.xml
+index d27a2ce5..0945805b 100644
+--- a/data/styles/kate.xml
++++ b/data/styles/kate.xml
+@@ -49,9 +49,8 @@
+   <style name="selection"                   foreground="#rgba(0,0,0,0)" background="#rgba(67, 172, 232, .3)"/>
+   <style name="current-line"                background="#f8f7f6"/>
+   <style name="current-line-number"         background="#f8f7f6" foreground="#1e1e1e"/>
+-  <style name="line-numbers"                foreground="#a0a0a0" background="#f0f0f0"/>
+-  <style name="line-numbers-border"         background="#dddddd"/>
+-  <style name="right-margin"                foreground="black" background="black"/>
++  <style name="line-numbers"                foreground="#a0a0a0" background="white"/>
++  <style name="right-margin"                foreground="#bebebe" background="#bebebe"/>
+   <style name="bracket-match"               background="yellow" foreground="magenta" bold="true"/>
+   <style name="bracket-mismatch"            background="red"/>
+   <style name="draw-spaces"                 foreground="#d2d2d2"/>
+@@ -61,6 +60,7 @@
+ 
+   <!-- Search Matching -->
+   <style name="search-match"                background="yellow"/>
++  <style name="quick-highlight-match"       background="#rgba(132,211,58,.25)"/>
+ 
+   <!-- Bookmarks -->
+   <style name="bookmark"                    background="#E5E5FF"/>
+ data/styles/oblivion.xml | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/data/styles/oblivion.xml b/data/styles/oblivion.xml
+index 544697df..78adb265 100644
+--- a/data/styles/oblivion.xml
++++ b/data/styles/oblivion.xml
+@@ -65,9 +65,9 @@
+   <style name="selection"                   foreground="#rgba(0,0,0,0)" background="#rgba(136, 138, 133, .3)"/>
+   <style name="cursor"                      foreground="aluminium2"/>
+   <style name="secondary-cursor"            foreground="#a1a49e"/>
+-  <style name="line-numbers"                foreground="aluminium5" background="black"/>
++  <style name="line-numbers"                foreground="aluminium5" background="aluminium6"/>
+   <style name="current-line"                background="aluminium5"/>
+-  <style name="current-line-number"         background="#212121"/>
++  <style name="current-line-number"         foreground="aluminium4" background="aluminium5"/>
+   <style name="draw-spaces"                 foreground="aluminium4"/>
+   <style name="background-pattern"          background="#34393a"/>
+   <style name="snippet-focus"               foreground="aluminium6" background="aluminium3"/>
+@@ -77,10 +77,11 @@
+   <style name="bracket-mismatch"            foreground="aluminium1" background="scarletred2"/>
+ 
+   <!-- Right Margin -->
+-  <style name="right-margin"                foreground="aluminium1" background="aluminium3"/>
++  <style name="right-margin"                foreground="aluminium5" background="aluminium5"/>
+ 
+   <!-- Search Matching -->
+   <style name="search-match"                foreground="aluminium1" background="chameleon3"/>
++  <style name="quick-highlight-match"       background="#rgba(234,54,128,.25)"/>
+ 
+   <!-- Comments -->
+   <style name="def:comment"                 foreground="aluminium4"/>
+ data/styles/solarized-dark.xml | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/data/styles/solarized-dark.xml b/data/styles/solarized-dark.xml
+index 15afab8d..ae094a50 100644
+--- a/data/styles/solarized-dark.xml
++++ b/data/styles/solarized-dark.xml
+@@ -55,8 +55,8 @@
+   <style name="cursor"                      foreground="base1"/>
+   <style name="secondary-cursor"            foreground="base00"/>
+   <style name="current-line"                background="base02"/>
+-  <style name="current-line-number"         background="#rgba(0,0,0,0)"/>
+-  <style name="line-numbers"                foreground="base01" background="base02"/>
++  <style name="current-line-number"         background="base02"/>
++  <style name="line-numbers"                foreground="base01" background="base03"/>
+   <style name="snippet-focus"               foreground="base01" background="base02"/>
+   <style name="background-pattern"          background="base03-02-blend"/>
+ 
+@@ -65,10 +65,11 @@
+   <style name="bracket-mismatch"            foreground="red" background="base01"/>
+ 
+   <!-- Right Margin -->
+-  <style name="right-margin"                foreground="base2" background="base1"/>
++  <style name="right-margin"                foreground="#404747" background="#404747"/>
+ 
+   <!-- Search Matching -->
+   <style name="search-match"                foreground="base03" background="yellow"/>
++  <style name="quick-highlight-match"       background="#rgba(78,154,6,.375)"/>
+ 
+   <!-- Builder Overrides -->
+   <style name="-Builder:breakpoint"         line-background="base1" foreground="base01"/>
+ data/styles/solarized-light.xml | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/data/styles/solarized-light.xml b/data/styles/solarized-light.xml
+index 98920f3a..4cffb870 100644
+--- a/data/styles/solarized-light.xml
++++ b/data/styles/solarized-light.xml
+@@ -55,8 +55,8 @@
+   <style name="selection"                   foreground="#rgba(0,0,0,0)" background="#rgba(147, 161, 161, .3)"/>
+   <style name="cursor"                      foreground="base01"/>
+   <style name="current-line"                background="base2"/>
+-  <style name="current-line-number"         background="#rgba(0,0,0,0)"/>
+-  <style name="line-numbers"                foreground="base1" background="base2"/>
++  <style name="current-line-number"         background="base2"/>
++  <style name="line-numbers"                foreground="base1" background="base3"/>
+   <style name="snippet-focus"               foreground="base1" background="base2"/>
+   <style name="background-pattern"          background="base3-2-blend"/>
+   <style name="draw-spaces"                 foreground="base4"/>
+@@ -66,10 +66,11 @@
+   <style name="bracket-mismatch"            foreground="red" background="base1"/>
+ 
+   <!-- Right Margin -->
+-  <style name="right-margin"                foreground="base01" background="base01"/>
++  <style name="right-margin"                foreground="#C0C0C0" background="#C0C0C0"/>
+ 
+   <!-- Search Matching -->
+   <style name="search-match"                foreground="base3" background="yellow"/>
++  <style name="quick-highlight-match"       background="#rgba(132,211,58,.25)"/>
+ 
+   <!-- Comments -->
+   <style name="def:comment"                 foreground="base1"/>
+ data/styles/tango.xml | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/data/styles/tango.xml b/data/styles/tango.xml
+index 6f1cd239..baa1b84c 100644
+--- a/data/styles/tango.xml
++++ b/data/styles/tango.xml
+@@ -65,9 +65,9 @@
+   <style name="selection"                   foreground="#rgba(0,0,0,0)" background="#rgba(53, 132, 228, .3)"/>
+   <style name="cursor"                      foreground="aluminium6"/>
+   <style name="secondary-cursor"            foreground="aluminium4"/>
+-  <style name="line-numbers"                foreground="aluminium5" background="aluminium1"/>
++  <style name="line-numbers"                foreground="aluminium5" background="white"/>
+   <style name="current-line"                background="aluminium1"/>
+-  <style name="current-line-number"         background="#e3e3e1"/>
++  <style name="current-line-number"         background="aluminium1"/>
+   <style name="draw-spaces"                 foreground="aluminium3"/>
+   <style name="background-pattern"          background="#f3f3f3"/>
+   <style name="snippet-focus"               foreground="aluminium6" background="aluminium2"/>
+@@ -77,10 +77,11 @@
+   <style name="bracket-mismatch"            foreground="aluminium1" background="scarletred3"/>
+ 
+   <!-- Right Margin -->
+-  <style name="right-margin"                foreground="aluminium6" background="aluminium6"/>
++  <style name="right-margin"                foreground="#C0C0C0" background="#C0C0C0"/>
+ 
+   <!-- Search Matching -->
+   <style name="search-match"                background="butter1"/>
++  <style name="quick-highlight-match"       background="#rgba(132,211,58,.25)"/>
+ 
+   <!-- Comments -->
+   <style name="def:comment"                 foreground="aluminium4"/>

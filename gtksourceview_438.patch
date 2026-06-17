@@ -1,0 +1,35 @@
+diff --git a/gtksourceview/gtksourcegutter.c b/gtksourceview/gtksourcegutter.c
+index 7fd2479f39fac64874698062468535b4c72cd97b..07d3cb7d3205a9ad4ea468ad67023232b18a3020 100644
+--- a/gtksourceview/gtksourcegutter.c
++++ b/gtksourceview/gtksourcegutter.c
+@@ -423,6 +423,8 @@ gtk_source_gutter_dispose (GObject *object)
+ 	GtkWidget *child;
+ 
+ 	g_clear_pointer (&gutter->target_binding, g_binding_unbind);
++	g_clear_object (&gutter->lines);
++	g_list_free_full (g_steal_pointer (&gutter->renderers), (GDestroyNotify) renderer_free);
+ 
+ 	if (gutter->signals != NULL)
+ 	{
+diff --git a/gtksourceview/gtksourcegutterlines.c b/gtksourceview/gtksourcegutterlines.c
+index 39eaf0f2db5a5e753c5e90282b0bf014fef61c2f..a2c56c9e0b445d854f02d6a616bc244aff01dffa 100644
+--- a/gtksourceview/gtksourcegutterlines.c
++++ b/gtksourceview/gtksourcegutterlines.c
+@@ -70,7 +70,7 @@ gtk_source_gutter_lines_finalize (GObject *object)
+ 	GtkSourceGutterLines *lines = (GtkSourceGutterLines *)object;
+ 
+ 	g_clear_pointer (&lines->lines, g_array_unref);
+-	g_clear_object (&lines->view);
++	g_clear_weak_pointer (&lines->view);
+ 
+ 	G_OBJECT_CLASS (gtk_source_gutter_lines_parent_class)->finalize (object);
+ }
+@@ -148,7 +148,7 @@ _gtk_source_gutter_lines_new (GtkTextView       *text_view,
+ 	g_return_val_if_fail (begin != end, NULL);
+ 
+ 	lines = g_object_new (GTK_SOURCE_TYPE_GUTTER_LINES, NULL);
+-	lines->view = g_object_ref (text_view);
++	g_set_weak_pointer (&lines->view, text_view);
+ 	lines->first = gtk_text_iter_get_line (begin);
+ 	lines->last = gtk_text_iter_get_line (end);
+ 	lines->lines = g_array_sized_new (FALSE,

@@ -1,0 +1,12 @@
+diff -Naur a/gtksourceview/gtksourcespacedrawer.c b/gtksourceview/gtksourcespacedrawer.c
+--- a/gtksourceview/gtksourcespacedrawer.c
++++ b/gtksourceview/gtksourcespacedrawer.c
+@@ -865,7 +865,7 @@
+ 
+ 	builder = gsk_path_builder_new ();
+ 
+-	gsk_path_builder_add_circle (builder, &GRAPHENE_POINT_INIT (x + w / 2, y), 0.8);
++	gsk_path_builder_add_circle (builder, &GRAPHENE_POINT_INIT (x + w / 2, y), 0.6);
+ 
+ 	path_builder_stroke_and_free (snapshot, builder);
+ }
