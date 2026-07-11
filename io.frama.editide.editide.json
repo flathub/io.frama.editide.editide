@@ -132,6 +132,20 @@
             ]
         },
         {
+            "name": "editide-extras",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dicon-themes=enabled"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://framagit.org/editide/extras.git",
+                    "commit": "8a1f9238c5986a1716162800fde42a6298e314d9"
+                }
+            ]
+        },
+        {
             "name": "editide",
             "buildsystem": "meson",
             "license-files": [
