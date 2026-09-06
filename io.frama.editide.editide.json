@@ -156,8 +156,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://editide.frama.io/assets/releases/4.0.4/editide-4.0.4.tar.xz",
-                    "sha256": "cc4695cf958896c742cb570070257b3b723115179509c15e8efaae2980cc62e5"
+                    "url": "https://editide.frama.io/assets/releases/4.0.5/editide-4.0.5.tar.xz",
+                    "sha256": "6ef532633165a42d2c6d41e38ce7d95078088213ab3efacfe5f13bb7b0b50f69"
                 }
             ]
         }
