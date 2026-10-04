@@ -1,7 +1,7 @@
 diff -Naur a/gtksourceview/gtksourcegutter.c b/gtksourceview/gtksourcegutter.c
 --- a/gtksourceview/gtksourcegutter.c
 +++ b/gtksourceview/gtksourcegutter.c
-@@ -831,7 +831,6 @@
+@@ -833,7 +833,6 @@
  	    (!gtk_text_buffer_get_selection_bounds (buffer, &cur, &sel) ||
               gtk_text_iter_get_line (&cur) == gtk_text_iter_get_line (&sel)))
  	{
@@ -9,7 +9,7 @@ diff -Naur a/gtksourceview/gtksourcegutter.c b/gtksourceview/gtksourcegutter.c
  		GdkRGBA highlight;
  		guint cursor_line;
  
-@@ -839,10 +838,7 @@
+@@ -841,10 +840,7 @@
  
  		if (cursor_line >= gtk_source_gutter_lines_get_first (gutter->lines) &&
  		    cursor_line <= gtk_source_gutter_lines_get_last (gutter->lines) &&
@@ -24,7 +24,7 @@ diff -Naur a/gtksourceview/gtksourcegutter.c b/gtksourceview/gtksourcegutter.c
 diff -Naur a/gtksourceview/gtksourceview.c b/gtksourceview/gtksourceview.c
 --- a/gtksourceview/gtksourceview.c
 +++ b/gtksourceview/gtksourceview.c
-@@ -2909,8 +2909,6 @@
+@@ -2822,8 +2822,6 @@
  
  	if (layer == GTK_TEXT_VIEW_LAYER_BELOW_TEXT)
  	{
@@ -33,7 +33,7 @@ diff -Naur a/gtksourceview/gtksourceview.c b/gtksourceview/gtksourceview.c
  		/* Now draw the background pattern, which might draw above the
  		 * right-margin area for additional texture. We can't really optimize
  		 * these too much since they move every scroll. Otherwise we'd move
-@@ -2927,10 +2925,7 @@
+@@ -2840,10 +2838,7 @@
  		 */
  		if (gtk_widget_is_sensitive (GTK_WIDGET (view)) &&
  		    priv->highlight_current_line &&
