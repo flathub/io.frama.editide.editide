@@ -38,8 +38,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/yaml/libyaml.git",
-                    "tag": "0.2.5",
-                    "commit": "2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
+                    "tag": "0.2.6",
+                    "commit": "fc96aa689026e314f2177e69a2903ef045aec571",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d\\.]+)$"
